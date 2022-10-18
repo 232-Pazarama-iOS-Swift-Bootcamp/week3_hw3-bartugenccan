@@ -63,8 +63,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let ebookNavigationController = UINavigationController(rootViewController: ebookViewController)
         ebookNavigationController.title = "Ebooks"
-         ebookNavigationController.tabBarItem.image = UIImage(systemName: "books.vertical")
-         ebookNavigationController.tabBarItem.selectedImage = UIImage(systemName: "books.vertical.fill")
+        ebookNavigationController.tabBarItem.image = UIImage(systemName: "books.vertical")
+        ebookNavigationController.tabBarItem.selectedImage = UIImage(systemName: "books.vertical.fill")
         
         let musicNavigationController = UINavigationController(rootViewController: musicViewController)
         musicViewController.title = "Musics"
@@ -73,8 +73,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let favoritesNavigationController = UINavigationController(rootViewController: favoritesViewController)
         favoritesNavigationController.title = "Favorites"
-        favoritesNavigationController.tabBarItem.image = UIImage(named: "star")
-        favoritesNavigationController.tabBarItem.selectedImage = UIImage(named: "star.fill")
+        favoritesNavigationController.tabBarItem.image = UIImage(systemName: "heart")
+        favoritesNavigationController.tabBarItem.selectedImage = UIImage(systemName: "heart.fill")
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [navigationController,ebookNavigationController, musicNavigationController,favoritesNavigationController]
